@@ -1,0 +1,7 @@
+.git
+.github
+node_modules
+.vscode
+README.md
+SANITY_BANNER_SCHEMA.md
+SANITY_PRODUCT_SCHEMA.md
