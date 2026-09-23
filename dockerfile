@@ -2,6 +2,6 @@ FROM nginx:alpine
 
 COPY . /usr/share/nginx/html
 
-EXPOSE 8000
+EXPOSE 2000
 
 CMD ["nginx", "-g", "daemon off;"]
