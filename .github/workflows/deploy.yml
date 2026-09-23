@@ -29,9 +29,9 @@ jobs:
       - name: Tag Docker Image
         run: |
           docker tag e-commerce:latest \
-          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/e-commerce:latest
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/e-commerce:v${GITHUB_RUN_NUMBER}
 
       - name: Push Image
         run: |
           docker push \
-          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/e-commerce:latest
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/e-commerce:v${GITHUB_RUN_NUMBER}
